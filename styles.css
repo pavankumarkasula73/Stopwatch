@@ -1,0 +1,106 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #d8e2aa, #add8e6);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #b4e1ec;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-button {
+    background: #0a67be;
+    color: rgb(213, 214, 231);
+    padding: 14px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background: #fff;
+    color: #8c52ff;
+}
+
+.container {
+    background-color: #ffff00;
+    width: 40%;
+    min-width: 500px;
+    margin-top: 100px;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+    text-align: center;
+}
+
+.timer-display {
+    width: 92%;
+    background: #fff;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    color: #3d08a7;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 20px rgba(65, 5, 145, 0.25); }
+    50% { box-shadow: 0 0 30px rgba(65, 5, 145, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(65, 5, 145, 0.25); }
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #8c52ff;
+    color: #f1e8e8;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #2c021c71;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #ff0000;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(57, 4, 92, 0.25);
+}
